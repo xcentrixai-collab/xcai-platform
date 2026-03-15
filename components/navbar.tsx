@@ -1,8 +1,6 @@
 import Link from 'next/link';
-import { Button } from '@/components/button';
 import { siteConfig } from '@/lib/site-config';
-
-const isLoggedIn = false;
+import { Button } from '@/components/button';
 
 export function Navbar() {
   return (
@@ -11,7 +9,6 @@ export function Navbar() {
         <Link href="/" className="text-lg font-semibold tracking-wide text-white">
           {siteConfig.name}
         </Link>
-
         <div className="hidden items-center gap-6 lg:flex">
           {siteConfig.navItems.map((item) => (
             <Link
@@ -23,13 +20,7 @@ export function Navbar() {
             </Link>
           ))}
         </div>
-
-        <div className="flex items-center gap-3">
-          <Link href={isLoggedIn ? '/dashboard' : '/login'} className="text-sm text-zinc-300 transition hover:text-white">
-            {isLoggedIn ? 'Dashboard' : 'Login'}
-          </Link>
-          <Button href="/start-trial">{siteConfig.cta}</Button>
-        </div>
+        <Button href="/start-trial">{siteConfig.cta}</Button>
       </div>
     </nav>
   );

@@ -9,11 +9,8 @@ export const siteConfig = {
     { label: 'Pricing', href: '/pricing' },
     { label: 'About', href: '/about' },
     { label: 'Blog', href: '/blog' },
-    { label: 'Contact', href: '/contact' }
-  ],
-  authItems: [
-    { label: 'Login', href: '/login' },
-    { label: 'Dashboard', href: '/dashboard' }
+    { label: 'Contact', href: '/contact' },
+    { label: 'Start Trial', href: '/start-trial' }
   ],
   footerLinks: {
     navigation: [
