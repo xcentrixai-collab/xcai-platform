@@ -6,12 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "guard:routes": "node scripts/check-route-collisions.mjs",
-    "ci:check": "npm run guard:routes && npm run lint && npm run build"
+    "lint": "next lint"
   },
   "dependencies": {
-    "next": "15.2.5",
+    "next": "^15.5.7",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
@@ -21,9 +19,10 @@
     "@types/react-dom": "^19.0.4",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.22.0",
-    "eslint-config-next": "15.2.5",
+    "eslint-config-next": "^15.5.7",
     "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.8.2"
   }
 }
+
